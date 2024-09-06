@@ -1,0 +1,34 @@
+body {
+  background-image: url(assets/car.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3em;
+  color: rgb(32, 32, 32);
+  font-size: 3rem;
+}
+
+h2 {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.384);
+  font-size: 2em;
+}
+p {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.555);
+}
+span {
+  color: rgb(228, 228, 228);
+  padding-left: 15px;
+}
+.center {
+  text-align: center;
+}
+
+.card-custom {
+  background-color: rgba(250, 250, 250, 0.753);
+}

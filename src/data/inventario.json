@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "modelo": "Toyota RAV4",
+    "category": "Suv",
+    "precio": 30000,
+    "desciption": "SUV versátil con un diseño elegante y amplio espacio interior, ideal para aventuras en carretera y uso diario.",
+    "pictureUrl": "https://cdn.motor1.com/images/mgl/2Pn7g/s1/lanzamiento-toyota-rav4-2021.webp"
+  },
+  {
+    "id": 2,
+    "modelo": "Honda CR-V",
+    "category": "Suv",
+    "precio": 32000,
+    "description": "SUV compacta con tecnología avanzada y confort, destacando por su eficiencia de combustible y capacidad de carga.",
+    "pictureUrl": "https://www.actualidadmotor.com/wp-content/uploads/2022/07/Honda-CR-V-2017-Portada.jpg"
+  },
+  {
+    "id": 3,
+    "modelo": "Ford Escape",
+    "category": "Suv",
+    "precio": 28000,
+    "description": "SUV dinámica con un manejo ágil y una cabina moderna, perfecta para familias y escapadas urbanas.",
+    "pictureUrl": "https://cdn.motor1.com/images/mgl/VzXWrB/s3/2023-ford-escape-plug-in-hybrid.jpg"
+  },
+  {
+    "id": 4,
+    "modelo": "Tesla Model 3",
+    "category": "Auto",
+    "precio": 45000,
+    "description": "Auto eléctrico de lujo con alto rendimiento y tecnología innovadora, destacando por su autonomía y diseño minimalista.",
+    "pictureUrl": "https://hips.hearstapps.com/hmg-prod/images/2018-tesla-model-3-performance-112-1539105464.jpg"
+  },
+  {
+    "id": 5,
+    "modelo": "Honda Civic",
+    "category": "Auto",
+    "precio": 25000,
+    "description": "Sedán compacto con un diseño deportivo y eficiente, ofreciendo un equilibrio entre rendimiento y comodidad.",
+    "pictureUrl": "https://img.remediosdigitales.com/66cafe/honda-civic-type-r-2020-suzuka-001/1366_2000.jpg"
+  },
+  {
+    "id": 6,
+    "modelo": "Toyota Corolla",
+    "category": "Auto",
+    "precio": 23000,
+    "description": "Auto confiable y económico con un diseño elegante, ideal para quienes buscan durabilidad y ahorro de combustible.",
+    "pictureUrl": "https://cdn.motor1.com/images/mgl/P3gQyK/s1/corolla-grs-1.webp"
+  },
+  {
+    "id": 7,
+    "modelo": "Ford F-150",
+    "category": "Pickup",
+    "precio": 40000,
+    "description": "Pickup robusta con gran capacidad de carga y remolque, diseñada para tareas exigentes y aventuras al aire libre.",
+    "pictureUrl": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/z34dcn1tzlr7px8uospe.jpg"
+  },
+  {
+    "id": 8,
+    "modelo": "Chevrolet Silverado",
+    "category": "Pickup",
+    "precio": 42000,
+    "description": "Pickup poderosa con un diseño fuerte y un interior cómodo, perfecta para trabajo y actividades recreativas.",
+    "pictureUrl": "https://i.pinimg.com/originals/79/bf/af/79bfaf730e335d53a47ccf5c2fa07f34.jpg"
+  },
+  {
+    "id": 9,
+    "modelo": "RAM 1500",
+    "category": "Pickup",
+    "precio": 45000,
+    "description": "Pickup de alto rendimiento con una combinación de capacidad de carga y confort, ideal para trabajo y viajes largos.",
+    "pictureUrl": "https://acnews.blob.core.windows.net/imgnews/large/NAZ_65395320d5ca41529e74ca7e097d4f7e.webp"
+  }
+]
