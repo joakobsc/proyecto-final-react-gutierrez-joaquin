@@ -15,9 +15,9 @@ export const ItemCount = ({ stock, onAdd }) => {
   return (
     <>
       <button onClick={handleIncrease}>+</button>
-      <span>{count}</span>
+      <span>{count} </span>
       <button onClick={handleDecrease}>-</button>
-      <button onClick={handleAdd}>Comprar</button>
+      <button onClick={handleAdd}>Agregar al Carrito</button>
     </>
   );
 };

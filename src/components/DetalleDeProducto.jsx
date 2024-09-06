@@ -35,9 +35,9 @@ export const ItemDetailsContainer = () => {
         className="mx-auto d-block"
       />
       <br />
-      <b>${item.price}</b>
+      <p>${item.price}</p>
       <br />
-      <b>Stock {item.stock}</b>
+      <p>Stock {item.stock}</p>
       <ItemCount stock={item.stock} onAdd={onAdd} />
     </Container>
   );
