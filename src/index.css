@@ -43,12 +43,16 @@ button {
   margin-top: 5vh;
   margin-bottom: 5vh;
   color: #fff;
+  font-weight: bold;
 }
 
 label {
   background-color: rgba(211, 210, 210, 0.603);
   padding: 5px 8px 5px;
   margin: 5px 8px 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 8%;
 }
 
 span {
@@ -56,5 +60,14 @@ span {
 }
 
 input {
-  background-color: rgba(0, 0, 0, 0.151);
+  background-color: rgba(21, 21, 21, 0.788);
+  text-decoration: none;
+  border: solid rgb(184, 184, 184) 2px;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #fff;
+  font-weight: 400;
+  width: 20%;
 }
