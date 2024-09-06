@@ -6,26 +6,29 @@ export const Provider = ({ children }) => {
   const [items, setItems] = useState([]);
 
   const reset = () => setItems([]);
+  const removeItem = (id) => {
+    const filter = items.filter((i) => i.id !== id);
+    setItems(filter);
+  };
 
   const addItem = (item) => {
     setItems((prevItems) => {
-      // Verifica si el ítem ya existe en el carrito
       const itemExists = prevItems.some((i) => i.id === item.id);
 
       return itemExists
         ? prevItems.map((i) =>
             i.id === item.id
-              ? { ...i, quantity: i.quantity + 1 } // Actualiza la cantidad del ítem existente
+              ? { ...i, quantity: i.quantity + item.quantity }
               : i
           )
-        : [...prevItems, { ...item, quantity: 1 }]; // Agrega un nuevo ítem con cantidad 1
+        : [...prevItems, item];
     });
   };
 
   console.log(items);
 
   return (
-    <CartContext.Provider value={{ addItem, items, reset }}>
+    <CartContext.Provider value={{ addItem, items, reset, removeItem }}>
       {children}
     </CartContext.Provider>
   );

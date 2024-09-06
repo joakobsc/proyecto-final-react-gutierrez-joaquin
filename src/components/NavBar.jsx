@@ -13,13 +13,13 @@ export const NavBar = () => {
             Car for Sale
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/category/Auto">
+            <Nav.Link as={NavLink} to="/categoryId/Auto">
               Autos
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/category/Suv">
+            <Nav.Link as={NavLink} to="/categoryId/SUV">
               Suvs
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/category/Pickup">
+            <Nav.Link as={NavLink} to="/categoryId/Pick up">
               Pick Ups
             </Nav.Link>
           </Nav>

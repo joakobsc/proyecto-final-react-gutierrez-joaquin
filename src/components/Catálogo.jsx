@@ -1,25 +1,32 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import data from "../data/inventario.json";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  where,
+  query,
+} from "firebase/firestore";
+/* import data from "../data/inventario.json"; */
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const { id } = useParams();
-
   useEffect(() => {
-    new Promise((res, rej) => {
-      setTimeout(() => res(data), 2000);
-    })
-      .then((response) => {
-        if (!id) {
-          setItems(response);
-        } else {
-          const filtered = response.filter((i) => i.category === id);
-          setItems(filtered);
-        }
+    const db = getFirestore();
+    const refCollection = !id
+      ? collection(db, "Items")
+      : query(collection(db, "Items"), where("categoryId", "==", id));
+    getDocs(refCollection)
+      .then((snapshot) => {
+        setItems(
+          snapshot.docs.map((doc) => {
+            return { id: doc.id, ...doc.data() };
+          })
+        );
       })
       .finally(() => setLoading(false));
   }, [id]);
@@ -35,13 +42,13 @@ export const ItemListContainer = () => {
               className="card-custom"
               style={{ width: "90%", minHeight: "100%" }}
             >
-              <Card.Img variant="top" src={item.pictureUrl} />
+              <Card.Img variant="top" src={item.imageId} />
               <Card.Body>
-                <Card.Title>{item.modelo}</Card.Title>
-                <Card.Text>Clase: {item.category}</Card.Text>
-                <Card.Text>Precio: ${item.precio}</Card.Text>
+                <Card.Title>{item.title}</Card.Title>
+                <Card.Text>Clase: {item.categoryId}</Card.Text>
+                <Card.Text>Precio: ${item.price}</Card.Text>
                 <Link to={`/item/${item.id}`}>
-                  <Button variant="primary">Comprar</Button>
+                  <Button variant="primary">Ver</Button>
                 </Link>
               </Card.Body>
             </Card>
